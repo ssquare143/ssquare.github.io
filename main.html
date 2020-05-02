@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="icon" type="image/gif" href="topicon.png">
+    </head>
+    <body>
+    <div id="navbar">
+  <a href="reservations.html"><span id="nav"> RESERVATIONS </span></a>
+ 
+  <a href="#news"><span id="nav"> MENUS </span></a>
+         <img id="b" src="m_logo.png">
+                </div>
+        <script>
+            // When the user scrolls down 30px from the top of the document, slide down the navbar
+            // When the user scrolls to the top of the page, slide up the navbar (80px out of the top view)
+            window.onscroll = function() {scrollFunction();scroll();};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+                document.getElementById("navbar").style.top = "0";
+                 } 
+            else {
+                    document.getElementById("navbar").style.top = "-80px";
+                 }
+            }
+
+        </script>
+        <div class="top">
+           <div id="top1"><img src="m_logo.png"><pre style="font-size: 16px;">                        <a>NEW DELHI</a></pre></div>
+        </div>
+        <script>
+
+        	function scroll(){
+        		if(document.body.scrollTop >230||document.documentElement.scrollTop>230){
+        			document.getElementById("top1").style.display="none";
+        		}
+        		else{
+        			document.getElementById("top1").style.display="block";
+        		}
+        	}
+        </script>
+        <div class="intro">
+            <div id="intro1">
+                <h3>INTRODUCTION</h3>
+                <pre>
+                Indian Accent showcases inventive Indiancuisine by 
+                complementing the flavours and traditions of India
+                with global ingredients and techniques.
+
+                Indian Accent has been featured in the World's 50 
+                Best Restaurants 2019. It has been awarded the San
+                Pellegrino Best Restaurant Award in India by Asia's
+                50 Best Restaurants 2019 for the fifth consecutive 
+                year. It has also been rated as the No.1 Restaurant
+                in India by TripAdvisor consistently from 2014 - 2019.
+                Indian Accent has been awarded the Number 1 Restaurant
+                in India by Condé Nast Traveller and Himalayan
+                Sparkling Top Restaurant Awards.
+                </pre>
+                <div class="myslideshead">
+                    <div class="mySlides">
+                        <pre style="margin-top: 0px; margin-left: -30px;">
+                                   <br><br>
+                                  Amongst World's 100 Greatest
+                                Places Of 2018 - Time Magazine
+                        </pre>
+                    </div>
+                    <div class="mySlides">
+                        <img src="award-2.jpg" style="height: 165px;
+                            width: 100px;padding: 10px;float: left;">
+                        <pre style="padding: 0px; margin: 0px;">
+                        <br><br>
+                        <span style="margin-left: -95px;">Awarded S. Pellegrino Best Restaurant In
+    India By Asia's 50 Best Restaurants 2019
+        For The Fifth Consecutive Year
+                        </span>
+                        </pre>
+                    </div>
+                    <div class="mySlides">
+                        <img src="award-2.jpg" style="height: 165px;
+                            width: 100px;padding: 10px;float: left;">
+                        <pre style="padding: 0px; margin: 0px;">
+                        <br><br>
+                        <span style="margin-left: -95px;">      Featured In The World’s 50 Best
+   Restaurants List By S. Pellegrino For Fifth
+                 Consecutive Years
+                        </span>
+                        </pre>
+                    </div>                   
+                    <div class="mySlides">
+                        <img src="award-1.jpg" style="height: 165px;
+                            width: 100px;padding: 10px;float: left;">
+                        <pre style="padding: 0px; margin: 0px;">
+                        <br><br>
+                        <span style="margin-left: -95px;">Ranked #1 In India By TripAdvisor For The
+                    Sixth Consecutive Year.
+                #3 In Asia, #18 In The World</span>
+                        </pre>
+                    </div>
+                </div>
+                <script>
+                    var slideIndex = 0;
+                     carousel();
+
+                    function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) 
+                    {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length)
+                    {slideIndex = 1}
+                    x[slideIndex-1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+                </script>
+            </div>
+            <div id="intro2">
+                <img src="flower.jpg">
+            </div>
+        </div>
+        <div style="background-color:rgba(60,60,60,0.1); width:100%; height: 300px;">
+            <div class="timing" style="margin-left: 270px;;">
+            <h4> TIMING </h4>
+                <pre >
+                LUNCH : 12:00 NOON - 2:30 PM
+                LAST ORDER 2:30 PM
+
+                DINNER : FIRST SEATING STARTS AT 7:00 PM | SECOND SEATING STARTS AT 9:45 PM
+                LAST ORDER 10:30 PM
+
+
+                <a href="reservations.html" style="color:orange;">CLICK HERE</a> FOR RESERVATION DETAILS
+
+
+                TO RESPECT THE DINING EXPERIENCES OF ALL OUR GUESTS, WE PRACTICE A RESTRICTED ENTRANCE POLICY ONLY 
+                ALLOWING CHILDREN AGED 10 YEARS AND ABOVE.
+                </pre>
+                
+            </div>
+        </div>
+        <div class="menu">
+            <div id="menu1">
+                <h3>MENU</h3>
+                <pre>
+                Chef Manish Mehrotra has designed Indian Accent’s 
+                path-breaking contemporary Indian menu combining 
+                fresh seasonal produce and unusual ingredients from
+                across the world to excite the adventurous, yet 
+                satisfy traditional tastes and evoke nostalgia.
+
+                The six course Chef's Tasting menu where each course
+                is paired with a selection of wines from India and 
+                across the world, offers the complete dining experience
+                of the restaurant.
+
+                <a href="menus.html" style="color: orange;">CLICK HERE</a> TO VIEW MENU DETAILS
+                </pre>
+            </div>
+            <div id="menu2">
+                <img src="aloo-puri-indianaccent.jpg">
+            </div>
+        </div>
+        <div class="chef">
+            <div id="chef1">
+                <h3>CHEF MANISH MEHROTRA</h3>
+                <pre>
+                Celebrated and critically acclaimed Chef Manish 
+                Mehrotra calls his cooking style 'inventive Indian’
+                and 'Indian food with an international accent’ 
+                or the other way around. He was awarded the Best
+                Chef in India by American Express and has also 
+                been called the most exciting modern Indian chef
+                in the world today. A true innovator, Chef Manish
+                Mehrotra has been instrumental in placing Indian 
+                Accent on the global culinary map.
+
+                <a id="knowmore" href="chef-Manish-Mehrotra.html" >KNOW MORE</a>
+                </pre>
+            </div>
+            <div id="chef2">
+                <img src="Chef-Manish-Mehrotra,-Indian-Accent-New-Delhi2.jpg">
+            </div>
+        </div>
+        <div id="Gallery_name">
+            <h2>GALLERY</h2>
+        </div>
+        <div class="gallery">
+        </div>
+        <div id="view_more"><a type="button" href="gallery.html"> VIEW MORE </a></div>
+        <div class="parent">
+        <div class="bottom">
+               <a class="butt" href="about_us.html"><p>INDIAN ACCENT RESTAURANT COOKBOOK</p></a>
+        </div></div>
+        <ul type="none" class="same1">
+             <li><a style="color: rgb(228,88,44);" href="main.html">HOME</a></li>
+             <li><a href="about_us.html">ABOUT US</a></li>
+             <li><a>MENUS</a></li>
+             <li><a>NEWS</a></li>
+             <li><a>REACH US</a></li>
+             <li><img class="icon" src="facebook.jpg"> <img class="icon" src="twitter.png"> <img class="icon" src="insta.png"></li>
+             <li><a style="color:rgb(228,88,44);">NEW DELHI</a></li>
+             <li><a>NEW YORK</a></li>
+             <li><a>LONDON</a></li>
+             <li><a>ON LOCATION</a></li>
+        </ul>
+        <div class="last">
+        	<ul type="none" class="same2">
+             <li>COPYRIGHT 2020</li>
+             <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+             <li><a href="terms&conditions.html">TERMS & CONDITIONS</a></li>
+             <li><a>COOKIE CONSENT</a></li>
+             <li><input style="background-color: rgba(60,60,60,0.1);width: 210px; height:30px;padding: 5px;" placeholder="SUBSCRIBE TO STAY UPDATED"> <button style="background-color:rgb(228,88,44); color: white; width: 150px; height:42px;padding: 5px; border: 0px solid orange;">Subscribe</button></li>
+        </ul>
+
+        </div>
+    </body>
+
+</html>
